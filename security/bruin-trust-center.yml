@@ -1,0 +1,14 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://getbruin.com/security/
+url: https://getbruin.com/security/
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://getbruin.com/security/
+  keywords:
+  - soc 2
+  - soc2
+  - gdpr

@@ -1,19 +1,51 @@
 aid: bruin
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bruin.png
 name: Bruin
-description: Bruin is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Bruin is an end-to-end, open-source AI data platform that consolidates data
+  ingestion, SQL and Python transformation, orchestration, quality checks,
+  column-level lineage, and natural-language analytics into a single Git-native
+  tool - positioned as a replacement for a fragmented Fivetran + dbt + Airflow +
+  BI stack. Its developer surface is the open-source Bruin CLI (Apache-2.0, Go),
+  the ingestr data-copy tool (MIT), a Python SDK, a VS Code extension, a GitHub
+  Action, and a built-in Model Context Protocol server (`bruin mcp`) plus a set
+  of packaged agent skills. Bruin Cloud adds a hosted control plane with
+  scheduling and dashboards. Bruin is SOC 2 Type 2 audited and GDPR-compliant,
+  and was a Techstars portfolio company. There is no public REST API; the
+  platform is operated through the CLI, SDK, and MCP server.
 url: https://raw.githubusercontent.com/api-evangelist/bruin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: enriched
+x-tier-reason: pipeline-enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Data
+- Data Engineering
+- Data Pipelines
+- ETL
+- ELT
+- Analytics
+- Data Quality
+- CLI
+- MCP
+- Open Source
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +55,59 @@ maintainers:
 common:
 - type: Website
   url: https://getbruin.com/
+- type: DeveloperPortal
+  url: https://bruin-data.github.io/bruin/
+- type: Documentation
+  url: https://bruin-data.github.io/bruin/
+- type: APIReference
+  url: https://bruin-data.github.io/bruin/commands/overview.html
+- type: GettingStarted
+  url: https://bruin-data.github.io/bruin/getting-started/introduction/quickstart.html
+- type: GitHubOrganization
+  url: https://github.com/bruin-data
+- type: Blog
+  url: https://getbruin.com/blog
+- type: Support
+  url: https://getbruin.com/support
+- type: SignUp
+  url: https://cloud.getbruin.com/register
+- type: TermsOfService
+  url: https://getbruin.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://getbruin.com/privacy
+- type: Security
+  url: https://getbruin.com/vulnerability-disclosure
+- type: Compliance
+  url: https://getbruin.com/security
+- type: TrustCenter
+  url: security/bruin-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/bruin-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/bruin-domain-security.yml
+- type: Packages
+  url: packages/bruin-packages.yml
+- type: SDKs
+  url: packages/bruin-packages.yml
+- type: CLI
+  url: cli/bruin-cli.yml
+- type: MCPServer
+  url: mcp/bruin-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: LLMsTxt
+  url: llms/bruin-llms.txt
+- type: Conformance
+  url: conformance/bruin-conformance.yml
+- type: Lifecycle
+  url: lifecycle/bruin-lifecycle.yml
+- type: ChangeLog
+  url: changelog/bruin-changelog.yml
+- type: ChangeLog
+  name: Bruin CLI GitHub Releases
+  url: https://github.com/bruin-data/bruin/releases
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

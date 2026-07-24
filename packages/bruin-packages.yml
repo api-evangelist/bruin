@@ -1,0 +1,68 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/bruin-data
+description: >-
+  First-party Bruin distributables. Bruin is an open-source data platform whose
+  primary surface is a CLI (bruin) plus the ingestr data-copy tool, a Python SDK
+  for Python assets, a VS Code extension, and a GitHub Action. There is no public
+  REST API / OpenAPI; these are the client-side artifacts developers install.
+packages:
+  - language: go
+    registry: github
+    name: bruin
+    url: https://github.com/bruin-data/bruin
+    install: curl -LsSf https://getbruin.com/install/cli | sh
+    official: true
+    kind: cli
+    license: Apache-2.0
+  - language: go
+    registry: pypi
+    name: ingestr
+    url: https://pypi.org/project/ingestr/
+    install: pip install ingestr
+    official: true
+    kind: cli
+    license: MIT
+    note: >-
+      ingestr is a Go/Python CLI to copy data between 100+ sources and
+      destinations with a single command; distributed on PyPI.
+  - language: python
+    registry: github
+    name: python-sdk
+    url: https://github.com/bruin-data/python-sdk
+    install: pip install git+https://github.com/bruin-data/python-sdk
+    official: true
+    kind: sdk
+    note: Eliminates boilerplate in Bruin Python assets.
+  - language: typescript
+    registry: vscode-marketplace
+    name: bruin.bruin
+    url: https://marketplace.visualstudio.com/items?itemName=bruin.bruin
+    install: code --install-extension bruin.bruin
+    official: true
+    kind: ide-extension
+    license: Apache-2.0
+  - language: typescript
+    registry: github
+    name: setup-bruin
+    url: https://github.com/bruin-data/setup-bruin
+    install: "uses: bruin-data/setup-bruin@v1"
+    official: true
+    kind: github-action
+  - language: ruby
+    registry: homebrew
+    name: bruin-data/tap
+    url: https://github.com/bruin-data/homebrew-tap
+    install: brew install bruin-data/tap/bruin
+    official: true
+    kind: cli
+    note: Homebrew install is deprecated in favor of the curl installer.
+  - language: go
+    registry: github
+    name: dac
+    url: https://github.com/bruin-data/dac
+    install: See repository releases
+    official: true
+    kind: cli
+    license: AGPL-3.0
+    note: Dashboard-as-code tool - build interactive dashboards from YAML and JSX.

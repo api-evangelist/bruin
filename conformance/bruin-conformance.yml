@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://getbruin.com/security
+description: >-
+  Compliance posture and cross-cutting standards for Bruin. SOC 2 Type 2 and
+  GDPR are published on the security page; the remaining entries are derived
+  from the platform's documented architecture and are not authoritative
+  provider certification claims.
+standards:
+  - id: soc2-type2
+    conforms: true
+    evidence: >-
+      security page states audited annually against AICPA Trust Services
+      Criteria (security, availability, confidentiality)
+  - id: gdpr
+    conforms: true
+    evidence: security page states lawful processing, data-subject rights, EU data residency
+  - id: iso-27001
+    conforms: false
+  - id: hipaa
+    conforms: false
+  - id: pci-dss
+    conforms: false
+  - id: fedramp
+    conforms: false
+  - id: saml2-sso
+    conforms: true
+    evidence: security page documents SSO via SAML 2.0
+  - id: tls-1.2-plus
+    conforms: true
+    evidence: security page states TLS 1.2+ in transit, AES-256 at rest
+compliance_program:
+  soc2_type2: true
+  gdpr: true
+  encryption: AES-256 at rest, TLS 1.2+ in transit
+  sso: [SAML 2.0, OAuth]
+  data_residency: EU supported
+  sla_uptime: "99.9%"

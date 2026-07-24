@@ -1,0 +1,52 @@
+generated: '2026-07-18'
+method: searched
+source: https://bruin-data.github.io/bruin/commands/ai-skills.html
+description: >-
+  Bruin publishes packaged agent skills, installed into a repository with
+  `bruin ai skills` (interactive selector, a named skill, or `all`). They work
+  with Bruin Cloud agents, local agents, and external assistants, and rely on
+  CLI commands (bruin validate, bruin render, bruin query, bruin run) plus local
+  logs. The skills below are Bruin's bundled set, captured verbatim from the
+  docs; the accompanying .md files are API Evangelist summaries grounded in the
+  real CLI command surface.
+skills:
+  - file: bruin-agents-guidance.md
+    name: AGENTS.md
+    description: Repository-level guidance for AI agents working in a Bruin project.
+    install: bruin ai skills AGENTS.md
+    commands: [validate, render, query, run]
+  - file: bruin-semantic-layer.md
+    name: bruin-semantic-layer
+    description: Guidance for creating and troubleshooting semantic layer models.
+    install: bruin ai skills bruin-semantic-layer
+    commands: [validate, render]
+  - file: bruin-pipeline-diagnose.md
+    name: pipeline-diagnose
+    description: Diagnose failed pipeline runs.
+    install: bruin ai skills pipeline-diagnose
+    commands: [validate, render, run]
+  - file: bruin-schema-drift-check.md
+    name: schema-drift-check
+    description: Detect schema changes.
+    install: bruin ai skills schema-drift-check
+    commands: [validate, query]
+  - file: bruin-duplicate-investigate.md
+    name: duplicate-investigate
+    description: Investigate duplicate data issues.
+    install: bruin ai skills duplicate-investigate
+    commands: [query]
+  - file: bruin-freshness-check.md
+    name: freshness-check
+    description: Troubleshoot data freshness problems.
+    install: bruin ai skills freshness-check
+    commands: [query, run]
+  - file: bruin-quality-check-investigate.md
+    name: quality-check-investigate
+    description: Investigate quality check failures.
+    install: bruin ai skills quality-check-investigate
+    commands: [validate, render, query]
+  - file: bruin-maintenance-action.md
+    name: maintenance-action
+    description: Handle approved maintenance actions.
+    install: bruin ai skills maintenance-action
+    commands: [run]

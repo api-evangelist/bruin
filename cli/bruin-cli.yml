@@ -1,0 +1,76 @@
+generated: '2026-07-18'
+method: searched
+source: https://bruin-data.github.io/bruin/
+description: >-
+  Bruin ships a first-party, Git-native CLI (Apache-2.0, Go) that is the primary
+  way to build and run data pipelines - SQL and Python assets, ingestion,
+  quality checks, lineage, and Bruin Cloud operations. A companion CLI, ingestr,
+  copies data between 100+ sources and destinations.
+clis:
+  - name: bruin
+    binary: bruin
+    repo: https://github.com/bruin-data/bruin
+    docs: https://bruin-data.github.io/bruin/
+    license: Apache-2.0
+    install:
+      - method: curl
+        command: curl -LsSf https://getbruin.com/install/cli | sh
+      - method: wget
+        command: wget -qO- https://getbruin.com/install/cli | sh
+      - method: homebrew
+        command: brew install bruin-data/tap/bruin
+        note: deprecated
+    commands:
+      - name: init
+        summary: Scaffold a new pipeline project from a template.
+      - name: run
+        summary: Execute a pipeline or an individual asset.
+      - name: validate
+        summary: Check pipeline and asset configuration validity.
+      - name: unit-test
+        summary: Run data/unit tests for assets.
+      - name: query
+        summary: Execute a query against a configured connection.
+      - name: lineage
+        summary: Visualize column- and asset-level dependencies.
+      - name: data-diff
+        summary: Compare tables across connections/environments.
+      - name: render
+        summary: Render an asset's compiled SQL/query.
+      - name: format
+        summary: Format pipeline/asset files.
+      - name: import
+        summary: Import assets/definitions into a project.
+      - name: patch
+        summary: Apply patches to assets.
+      - name: clean
+        summary: Clean generated/temporary artifacts.
+      - name: connections
+        summary: Manage data connections.
+      - name: environments
+        summary: Manage pipeline environments.
+      - name: mcp
+        summary: Start the Bruin MCP server (stdio) for AI assistants.
+      - name: ai skills
+        summary: Install or update packaged agent skills for a repository.
+      - name: ai enhance
+        summary: AI-assisted enhancement of assets/pipelines.
+      - name: cloud
+        summary: Bruin Cloud operations (scheduled-runs, dashboards, deploy).
+    key_flows:
+      - Scaffold and run a first pipeline (init -> run).
+      - Ingest from an external source, transform with SQL/Python, add quality checks.
+      - Diff data across environments before promotion (data-diff).
+      - Serve the CLI as an MCP server for AI agents (bruin mcp).
+  - name: ingestr
+    binary: ingestr
+    repo: https://github.com/bruin-data/ingestr
+    docs: https://bruin-data.github.io/ingestr/
+    license: MIT
+    install:
+      - method: pip
+        command: pip install ingestr
+    summary: >-
+      Copy data from any source to any destination with a single command;
+      supports append, merge, and delete+insert incremental strategies across
+      100+ sources and destinations.

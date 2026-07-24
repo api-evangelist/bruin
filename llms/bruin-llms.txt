@@ -1,0 +1,43 @@
+# Bruin
+
+> Bruin is an end-to-end, open-source AI data platform that consolidates data
+> ingestion, SQL/Python transformation, orchestration, quality checks, column-
+> level lineage, and natural-language analytics into a single Git-native tool.
+> Its primary developer surface is the open-source Bruin CLI (Apache-2.0) plus
+> the ingestr data-copy tool, a Python SDK, a VS Code extension, a GitHub Action,
+> and a built-in Model Context Protocol server (`bruin mcp`). Bruin Cloud adds a
+> hosted control plane, scheduling, and dashboards. SOC 2 Type 2 audited; GDPR.
+
+## Docs
+- [Documentation (Bruin CLI)](https://bruin-data.github.io/bruin/)
+- [Installation](https://bruin-data.github.io/bruin/getting-started/introduction/installation.html)
+- [Quickstart](https://bruin-data.github.io/bruin/getting-started/introduction/quickstart.html)
+- [Commands overview](https://bruin-data.github.io/bruin/commands/overview.html)
+- [Bruin MCP server](https://bruin-data.github.io/bruin/getting-started/bruin-mcp.html)
+- [AI skills](https://bruin-data.github.io/bruin/commands/ai-skills.html)
+- [Bruin Academy / Learn](https://getbruin.com/learn)
+
+## Repositories
+- [bruin (CLI, Go, Apache-2.0)](https://github.com/bruin-data/bruin)
+- [ingestr (data copy, MIT)](https://github.com/bruin-data/ingestr)
+- [python-sdk](https://github.com/bruin-data/python-sdk)
+- [dac (dashboard-as-code, AGPL-3.0)](https://github.com/bruin-data/dac)
+- [bruin-vscode (VS Code extension)](https://github.com/bruin-data/bruin-vscode)
+- [setup-bruin (GitHub Action)](https://github.com/bruin-data/setup-bruin)
+- [GitHub organization](https://github.com/bruin-data)
+
+## Packages
+- [ingestr on PyPI](https://pypi.org/project/ingestr/) — `pip install ingestr`
+- [Bruin VS Code extension](https://marketplace.visualstudio.com/items?itemName=bruin.bruin)
+- CLI install — `curl -LsSf https://getbruin.com/install/cli | sh`
+
+## Product & Company
+- [Product site](https://getbruin.com/)
+- [Sign up (Bruin Cloud)](https://cloud.getbruin.com/register)
+- [Security & Compliance](https://getbruin.com/security)
+- [Vulnerability disclosure](https://getbruin.com/vulnerability-disclosure)
+- [Terms of Service](https://getbruin.com/terms-of-service)
+- [Privacy Policy](https://getbruin.com/privacy)
+- [Support](https://getbruin.com/support)
+- [Blog](https://getbruin.com/blog)
+- [Changelog (GitHub Releases)](https://github.com/bruin-data/bruin/releases)

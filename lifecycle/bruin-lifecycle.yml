@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/bruin-data/bruin/releases
+description: >-
+  Lifecycle posture for the Bruin CLI and platform. Bruin is versioned with
+  semantic version tags cut frequently on GitHub Releases (the de facto
+  changelog). A 99.9% uptime SLA is published for Bruin Cloud on the security
+  page. No dedicated public status page (status.getbruin.com) was found, and no
+  formal API deprecation policy is published (the CLI has no public REST API);
+  Homebrew installation is documented as deprecated in favor of the curl installer.
+versioning:
+  scheme: semver
+  current: v0.11.682
+  source: https://github.com/bruin-data/bruin/releases
+  cadence: frequent (multiple patch releases per week)
+sla:
+  uptime_target: "99.9%"
+  source: https://getbruin.com/security
+  monitoring: 24/7
+status_page: null
+deprecation:
+  api_deprecation_policy: null
+  notes: Homebrew install method documented as deprecated in favor of curl installer.
+deprecated_operations: []

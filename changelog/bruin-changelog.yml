@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/bruin-data/bruin/releases
+description: >-
+  Bruin CLI publishes a dated release stream on GitHub Releases as its changelog,
+  with semantic-version tags cut multiple times per week. Recent window captured
+  below verbatim from the releases page.
+scheme: semver
+current_version: v0.11.682
+changelog_url: https://github.com/bruin-data/bruin/releases
+entries:
+  - version: v0.11.682
+    date: '2026-07-16'
+    highlights:
+      - Add `cloud scheduled-runs` command.
+      - Timeout field support for assets.
+  - version: v0.11.681
+    date: '2026-07-15'
+    highlights:
+      - Email notifications.
+      - StarRocks platform support.
+      - MongoDB and SQL Server CDC.
+  - version: v0.11.680
+    date: '2026-07-14'
+    highlights:
+      - BigQuery dry-run test expectations updated for SDK v1.74.0.
+  - version: v0.11.679
+    date: '2026-07-14'
+    highlights:
+      - Add `cloud dashboards update` command.
+      - SCD2 timestamp standardization.
+  - version: v0.11.678
+    date: '2026-07-14'
+    highlights:
+      - Ingestr bumped to v1.0.77 with database import flag.
+  - version: v0.11.677
+    date: '2026-07-13'
+    highlights:
+      - Pull request template addition.
+      - Ingestr v1.0.76 update.

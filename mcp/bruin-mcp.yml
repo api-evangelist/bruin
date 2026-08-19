@@ -2,28 +2,32 @@ generated: '2026-07-18'
 method: searched
 status: published
 source: https://bruin-data.github.io/bruin/getting-started/bruin-mcp.html
-description: >-
-  Bruin ships an official MCP server built into the CLI. Running `bruin mcp`
-  starts a local stdio Model Context Protocol server that extends AI agents to
-  query data, compare tables, ingest data, build pipelines, and answer questions
-  about Bruin configuration and best practices, using the Bruin CLI's own
-  capabilities. Requires the Bruin CLI installed and a project folder with a
-  .bruin.yml configuration file.
+description: Bruin ships an official MCP server built into the CLI. Running `bruin mcp` starts a local
+  stdio Model Context Protocol server that extends AI agents to query data, compare tables, ingest data,
+  build pipelines, and answer questions about Bruin configuration and best practices, using the Bruin
+  CLI's own capabilities. Requires the Bruin CLI installed and a project folder with a .bruin.yml configuration
+  file.
 server:
   name: bruin
   transport: stdio
   command: bruin
-  args: [mcp]
+  args:
+  - mcp
 clients:
-  - name: Claude Code
-    config: claude mcp add bruin -- bruin mcp
-  - name: Cursor
-    config: '{ "mcpServers": { "bruin": { "command": "bruin", "args": ["mcp"] } } }'
-  - name: VS Code
-    config: '{ "servers": { "bruin": { "type": "stdio", "command": "bruin", "args": ["mcp"] } } }'
+- name: Claude Code
+  config: claude mcp add bruin -- bruin mcp
+- name: Cursor
+  config: '{ "mcpServers": { "bruin": { "command": "bruin", "args": ["mcp"] } } }'
+- name: VS Code
+  config: '{ "servers": { "bruin": { "type": "stdio", "command": "bruin", "args": ["mcp"] } } }'
 capabilities:
-  - Run queries across configured databases/connections.
-  - Ingest data from tens of sources (Shopify, Google Sheets, Salesforce, and more).
-  - Compare data across environments using data-diff.
-  - Build and configure data pipelines.
-  - Retrieve documentation and answer Bruin configuration/best-practice questions.
+- Run queries across configured databases/connections.
+- Ingest data from tens of sources (Shopify, Google Sheets, Salesforce, and more).
+- Compare data across environments using data-diff.
+- Build and configure data pipelines.
+- Retrieve documentation and answer Bruin configuration/best-practice questions.
+deployment:
+  mode: local-stdio
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census

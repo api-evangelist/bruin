@@ -56,7 +56,7 @@ tags:
 - Data Quality
 - CLI
 - MCP
-- Open-Source
+- Open Source
 tags_raw:
 - Company
 - Data
@@ -69,6 +69,7 @@ tags_raw:
 - CLI
 - MCP
 - Open Source
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
